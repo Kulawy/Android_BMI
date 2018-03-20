@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">BMI</string>
+    <string name="mass_kg">MASS [kg]</string>
+    <string name="height_cm">HEIGHT [cm]</string>
+    <string name="mass_lb">MASS [lb]</string>
+    <string name="height_in">HEIGHT [in]</string>
+    <string name="mass_please">write your mass, please</string>
+    <string name="height_please">write your height, please</string>
+    <string name="count">COUNT</string>
+    <string name="warningHeight">Bad height!</string>
+    <string name="warningMass">Bad mass!</string>
+    <string name="settings">Settings</string>
+    <string name="save">save</string>
+    <string name="about_author">about author</string>
+    <string name="back">Back</string>
+    <string name="your_bmi">your BMI:</string>
+    <string name="some_name">some Name:</string>
+    <string name="my_name">inż. arch. Jakub Geroń</string>
+    <string name="something_about">About me:</string>
+    <string name="warningEmptyValue">Can not remember nothing</string>
+    <string name="warningValues">Bad Values</string>
+    <string name="mode_choice">kg,m / lb,in</string>
+    <string name="bmi">bmi</string>
+    <string name="about_me">
+        Enthusiastic, joyfull, appreciating life
+        Skydiver, capoeira fighter, acrobat,
+        motorcycler (retired, because of it, I lost my leg, literally, but don\'t worry, Doctors sewed it back )
+        and architect engineer, that actually study computer science,
+        I think order of those things depends of my mood
+        but you know, there is some like ying yang concept
+    </string>
+    <string name="clear_saved">clear saved</string>
+</resources>

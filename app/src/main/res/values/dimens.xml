@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="values_edit">21sp</dimen>
+    <dimen name="values_title">18sp</dimen>
+    <dimen name="big_text">36sp</dimen>
+    <dimen name="huge_text">64sp</dimen>
+
+    <dimen name="small_margin">8dp</dimen>
+</resources>

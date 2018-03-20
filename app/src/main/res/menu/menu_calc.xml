@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <item
+        android:id="@+id/action_save"
+        android:icon="@drawable/ic_action_save"
+        android:title="save"
+        app:showAsAction="always" />
+
+    <group
+        android:id="@+id/drop_down"
+        app:showAsAction="never"
+         >
+        <item
+            android:id="@+id/action_about_me"
+            android:orderInCategory="10"
+            android:title="@string/about_author"
+            />
+        <item
+            android:id="@+id/action_clear_saved"
+            android:orderInCategory="9"
+            android:title="@string/clear_saved"
+            />
+
+    </group>
+
+</menu>
+
+<!--
+    <item
+        android:id="@+id/action_drop_down"
+        android:title="menu"
+        android:icon="@drawable/ic_menu_drop_down"
+        app:showAsAction="ifRoom"  >
+        <menu>
+            <item
+                android:id="@+id/action_about_me"
+                android:title="@string/about_author"
+                />
+        </menu>
+    </item>
+
+
+-->

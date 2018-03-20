@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#686d89</color>
+    <color name="colorPrimaryDark">#383f49</color>
+    <color name="colorAccent">#d20b26</color>
+    <color name="blue">#3089ac</color>
+    <color name="green">#2f7315</color>
+    <color name="red">#ab170f</color>
+    <color name="default_color">#eac82e</color>
+    <color name="bmi_display_color">@android:color/white</color>
+</resources>
