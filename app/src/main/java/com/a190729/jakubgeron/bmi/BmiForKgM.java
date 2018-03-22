@@ -6,6 +6,9 @@ package com.a190729.jakubgeron.bmi;
 
 public class BmiForKgM extends BMI {
 
+    private final static int OVERMASS = 400;
+    private final static int OVERHEIGHT = 300;
+
     public BmiForKgM(double m, double h) {
         super(m, h);
     }
@@ -20,7 +23,7 @@ public class BmiForKgM extends BMI {
 
     @Override
     protected boolean dataAreValid() {
-        return (mass > 0 && height > 0 && mass <= 400 && height <= 300);
+        return (mass > 0 && height > 0 && mass <= OVERMASS && height <= OVERHEIGHT);
     }
 }
 

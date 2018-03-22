@@ -95,9 +95,7 @@ public class BMImainActivity extends AppCompatActivity {
         getHeight();
 
         TextView resultView = (TextView) findViewById(R.id.result);
-
-        saveState();
-
+        //saveState();
         try {
             BMI object;
             if (modeValue){
@@ -153,21 +151,23 @@ public class BMImainActivity extends AppCompatActivity {
         editor.putBoolean("b_modeValue", modeValue);
 
         EditText massData = (EditText) findViewById(R.id.mass);
-        if (!massData.getText().toString().equals("")) {
-            d_mass = Double.parseDouble(massData.getText().toString());
-            String s_userMass = (new Double(d_mass)).toString();
-            editor.putString("s_mass", s_userMass);
-        } else
-            Toast.makeText(this, R.string.warningEmptyValue, Toast.LENGTH_SHORT).show();
-
         EditText heightData = (EditText) findViewById(R.id.height);
-        if (!heightData.getText().toString().equals("")) {
-            d_height = Double.parseDouble(heightData.getText().toString());
-            String s_userHeight = (new Double(d_height)).toString();
-            editor.putString("s_height", s_userHeight);
+        if ( !massData.getText().toString().equals("") || !heightData.getText().toString().equals("") ){
+            if (!massData.getText().toString().equals("")) {
+                d_mass = Double.parseDouble(massData.getText().toString());
+                String s_userMass = (new Double(d_mass)).toString();
+                editor.putString("s_mass", s_userMass);
+            } else
+                Toast.makeText(this, R.string.warningEmptyValue, Toast.LENGTH_SHORT).show();
+
+            if (!heightData.getText().toString().equals("")) {
+                d_height = Double.parseDouble(heightData.getText().toString());
+                String s_userHeight = (new Double(d_height)).toString();
+                editor.putString("s_height", s_userHeight);
+            } else
+                Toast.makeText(this, R.string.warningEmptyValue, Toast.LENGTH_SHORT).show();
         } else
             Toast.makeText(this, R.string.warningEmptyValue, Toast.LENGTH_SHORT).show();
-
 
         editor.apply();
     }

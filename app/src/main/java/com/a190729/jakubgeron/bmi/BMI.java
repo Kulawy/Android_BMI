@@ -8,6 +8,8 @@ public abstract class BMI {
 
     protected double mass;
     protected double height;
+    private static final double UNDER_BMI = 18.5;
+    private static final double OVER_BMI = 25;
 
     public BMI(double m, double h){
         mass = m;
@@ -25,9 +27,9 @@ public abstract class BMI {
 
     public int setColor(){
 
-        if ( calculateBmi() < 18.5 )
+        if ( calculateBmi() < UNDER_BMI )
             return R.color.blue;
-        else if( calculateBmi() > 25 )
+        else if ( calculateBmi() > OVER_BMI )
             return R.color.red;
         else
             return R.color.green;
